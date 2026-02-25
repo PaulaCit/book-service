@@ -2,6 +2,10 @@ spring:
   application:
     name: book-service
 
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
   # Configurações de Conexão com o Banco de Dados
   datasource:
     url: jdbc:postgresql://localhost:5434/postgres

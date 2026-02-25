@@ -12,16 +12,16 @@ data class Book(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0,
 
-    @Column("author",nullable = false, length = 180)
+    @Column(name = "author", nullable = false, length = 180)
     var author: String = "",
 
-    @Column("launch_date")
+    @Column(name = "launch_date", nullable = false)
     var lauchDate: Date? = null,
 
-    @Column("price")
+    @Column(name = "price", nullable = false)
     var price: Double? = null,
 
-    @Column("title", nullable = false, length = 250)
+    @Column(name = "title", nullable = false, length = 250)
     var title: String = "",
 
     @Transient
